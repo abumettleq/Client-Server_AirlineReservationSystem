@@ -2,6 +2,7 @@
 A Java project I did in my 4th semester, basically a client application that connects to a multi-thread server to operate, the server uses MYSQL database to store/fetch data.
 
 code for database, if i remember right.
+
 create table Account
 (
 Acc_ID INT NOT NULL AUTO_INCREMENT,
