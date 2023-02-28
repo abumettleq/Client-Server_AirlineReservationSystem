@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="549.0" prefWidth="930.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="product.client_final.controller.ShopController">
+  <tabs>
+    <Tab style="-fx-background-color: white;" text="One Way">
+         <content>
+            <ScrollPane hbarPolicy="NEVER" prefHeight="516.0" prefWidth="930.0" vbarPolicy="ALWAYS">
+               <content>
+                  <AnchorPane prefHeight="575.0" prefWidth="930.0" style="-fx-background-color: white;">
+                     <children>
+                        <ComboBox fx:id="oneway_from_country" layoutX="57.0" layoutY="34.0" prefWidth="150.0" promptText="Choose" />
+                        <Label layoutX="14.0" layoutY="34.0" text="From">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="258.0" layoutY="34.0" text="To">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <ComboBox fx:id="oneway_to_country" layoutX="282.0" layoutY="34.0" prefWidth="150.0" promptText="Choose" />
+                        <Label layoutX="511.0" layoutY="34.0" text="Departure date">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <DatePicker fx:id="oneway_departureDate" layoutX="623.0" layoutY="34.0" promptText="Pick a date" />
+                        <Label layoutX="14.0" layoutY="97.0" text="As In Passport, Add The Following:">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="145.0" text="Full Name">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="oneway_fname" layoutX="99.0" layoutY="145.0" prefHeight="25.0" prefWidth="235.0" />
+                        <Separator layoutX="223.0" layoutY="80.0" prefHeight="1.0" prefWidth="419.0" />
+                        <Separator layoutX="223.0" layoutY="206.0" prefHeight="1.0" prefWidth="419.0" />
+                        <Label layoutX="14.0" layoutY="220.0" text="Contact Details">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="autofillButton" layoutX="658.0" layoutY="194.0" mnemonicParsing="false" text="Auto-Fill According to Account Info" />
+                        <Label layoutX="14.0" layoutY="260.0" text="Full Name">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="oneway_fname2" layoutX="99.0" layoutY="260.0" prefHeight="25.0" prefWidth="235.0" />
+                        <Label layoutX="14.0" layoutY="291.0" text="Email">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="oneway_email" layoutX="99.0" layoutY="291.0" prefHeight="25.0" prefWidth="235.0" />
+                        <Label layoutX="15.0" layoutY="322.0" text="Mobile">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="oneway_mobile" layoutX="99.0" layoutY="322.0" prefHeight="25.0" prefWidth="235.0" />
+                        <Separator layoutX="223.0" layoutY="373.0" prefHeight="1.0" prefWidth="419.0" />
+                        <Label layoutX="18.0" layoutY="386.0" text="Preferences">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="17.0" layoutY="464.0" text="Seat">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="oneway_seat" layoutX="57.0" layoutY="464.0" prefHeight="25.0" prefWidth="58.0" promptText="e.g. K19" />
+                        <Label layoutX="16.0" layoutY="500.0" text="Meal">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="oneway_meal" layoutX="61.0" layoutY="500.0" prefHeight="25.0" prefWidth="149.0" promptText="e.g. Vegetarian Meal" />
+                        <Button fx:id="oneway_reservationButton" layoutX="728.0" layoutY="525.0" mnemonicParsing="false" text="Reserve Ticket">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                        <Label layoutX="132.0" layoutY="468.0" text="Letters(A,B,C,D,E,G,H,J,K), Numbers(15~45)" />
+                        <Label layoutX="16.0" layoutY="428.0" text="Ticket Type">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <ComboBox fx:id="oneway_type" layoutX="108.0" layoutY="428.0" prefWidth="150.0" promptText="Choose" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </ScrollPane>
+         </content></Tab>
+    <Tab style="-fx-background-color: white;" text="Return">
+         <content>
+            <ScrollPane hbarPolicy="ALWAYS" prefHeight="516.0" prefWidth="930.0" vbarPolicy="ALWAYS">
+               <content>
+                  <AnchorPane prefHeight="581.0" prefWidth="1098.0" style="-fx-background-color: white;">
+                     <children>
+                        <ComboBox fx:id="from_country1" layoutX="57.0" layoutY="34.0" prefWidth="150.0" promptText="Choose" />
+                        <Label layoutX="14.0" layoutY="34.0" text="From">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="258.0" layoutY="34.0" text="To">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <ComboBox fx:id="to_country1" layoutX="282.0" layoutY="34.0" prefWidth="150.0" promptText="Choose" />
+                        <Label layoutX="511.0" layoutY="34.0" text="Leaving date">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <DatePicker fx:id="leavingDate" layoutX="609.0" layoutY="34.0" promptText="Pick a date" />
+                        <Label layoutX="14.0" layoutY="97.0" text="As In Passport, Add The Following:">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="145.0" text="Full Name">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="fname1" layoutX="99.0" layoutY="145.0" prefHeight="25.0" prefWidth="235.0" />
+                        <Separator layoutX="223.0" layoutY="80.0" prefHeight="1.0" prefWidth="419.0" />
+                        <Separator layoutX="223.0" layoutY="206.0" prefHeight="1.0" prefWidth="419.0" />
+                        <Label layoutX="14.0" layoutY="220.0" text="Contact Details">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="autofillButton1" layoutX="658.0" layoutY="194.0" mnemonicParsing="false" text="Auto-Fill According to Account Info" />
+                        <Label layoutX="14.0" layoutY="260.0" text="Full Name">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="fname21" layoutX="99.0" layoutY="260.0" prefHeight="25.0" prefWidth="235.0" />
+                        <Label layoutX="14.0" layoutY="291.0" text="Email">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="email1" layoutX="99.0" layoutY="291.0" prefHeight="25.0" prefWidth="235.0" />
+                        <Label layoutX="15.0" layoutY="322.0" text="Mobile">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="mobile1" layoutX="99.0" layoutY="322.0" prefHeight="25.0" prefWidth="235.0" />
+                        <Separator layoutX="223.0" layoutY="373.0" prefHeight="1.0" prefWidth="419.0" />
+                        <Label layoutX="18.0" layoutY="386.0" text="Preferences">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="17.0" layoutY="464.0" text="Seat">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="seat1" layoutX="57.0" layoutY="464.0" prefHeight="25.0" prefWidth="58.0" promptText="e.g. K19" />
+                        <Label layoutX="16.0" layoutY="499.0" text="Meal">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="meal1" layoutX="61.0" layoutY="499.0" prefHeight="25.0" prefWidth="149.0" promptText="e.g. Vegetarian Meal" />
+                        <Button fx:id="reservationButton1" layoutX="735.0" layoutY="531.0" mnemonicParsing="false" text="Reserve Ticket">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                        <Label layoutX="132.0" layoutY="468.0" text="Letters(A,B,C,D,E,G,H,J,K), Numbers(15~45)" />
+                        <Label layoutX="16.0" layoutY="428.0" text="Ticket Type">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <ComboBox fx:id="economy1" layoutX="108.0" layoutY="428.0" prefWidth="150.0" promptText="Choose" />
+                        <Label layoutX="837.0" layoutY="34.0" text="Coming-Back date">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <DatePicker fx:id="comingDate" layoutX="977.0" layoutY="34.0" promptText="Pick a date" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </ScrollPane>
+         </content></Tab>
+  </tabs>
+</TabPane>
